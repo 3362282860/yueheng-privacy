@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>悦衡隐私政策</title>
+  <meta name="description" content="悦衡 Android 应用隐私政策，说明个人信息的收集、使用、存储及用户权利。">
+  <style>
+    :root{font-family:system-ui,-apple-system,"Noto Sans CJK SC","Microsoft YaHei",sans-serif;color:#242832;background:#f6f7fa;font-size:16px;line-height:1.78}
+    *{box-sizing:border-box}body{margin:0}main{max-width:920px;margin:0 auto;padding:24px 16px 64px}
+    header{background:linear-gradient(135deg,#fff5e9,#eff6ff);border:1px solid #e9e5df;border-radius:24px;padding:28px 30px;margin-bottom:22px}
+    h1{font-size:clamp(28px,5vw,38px);line-height:1.25;margin:0 0 10px}h2{font-size:23px;line-height:1.4;margin:0 0 12px}h3{font-size:18px;margin:20px 0 6px}
+    p,ul{margin:8px 0 14px}ul{padding-left:1.5em}li{margin:4px 0}a{color:#bd5720;overflow-wrap:anywhere}a:hover{text-decoration-thickness:2px}
+    section{background:#fff;border:1px solid #e8e9ed;border-radius:20px;padding:24px 30px;margin:16px 0;box-shadow:0 8px 32px rgba(33,41,57,.035)}
+    .meta{color:#616977;font-size:14px}.lead{font-size:17px}.notice{background:#fff8ec;border-left:4px solid #ec7d35;padding:12px 16px;border-radius:8px}
+    .table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;min-width:640px;font-size:15px}th,td{padding:12px 14px;border-bottom:1px solid #e8e9ed;text-align:left;vertical-align:top}th{background:#f8f9fb;white-space:nowrap}
+    .tag{display:inline-block;color:#a44d1d;background:#fff0e5;border-radius:999px;padding:3px 12px;font-weight:600;font-size:14px;margin-bottom:12px}
+    footer{color:#626978;text-align:center;font-size:14px;padding-top:12px}
+    @media(max-width:600px){main{padding:12px 12px 44px}header,section{padding:20px 18px;border-radius:18px}h2{font-size:21px}}
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="tag">悦衡 · Android 应用</span>
+    <h1>悦衡隐私政策</h1>
+    <p class="meta">更新日期：2026 年 11 月 13 日　｜　生效日期：2026 年 11 月 13 日</p>
+    <p class="lead">本政策说明“悦衡”（包名：com.example.buildgradle）如何处理您在使用饮食识别、运动记录、身心健康功能及 AI 助手时涉及的个人信息。请在使用前阅读。</p>
+    <p>个人信息处理者及应用运营者：<strong>刘思阳</strong>。沈阳城市学院为运营者所在单位，<strong>并非本政策所称的应用运营主体</strong>。联系邮箱：<a href="mailto:3365217913@qq.com">3365217913@qq.com</a>。</p>
+  </header>
+
+  <section id="collection">
+    <h2>一、我们处理哪些信息</h2>
+    <p>不同功能需要的信息不同。您可以选择不使用某项功能；拒绝相应权限只会影响该功能。</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>功能</th><th>信息与用途</th><th>处理和保存方式</th></tr></thead>
+      <tbody>
+        <tr><td>注册、登录和资料</td><td>邮箱、密码及账号标识用于注册和登录；您填写的昵称、手机号及头像用于展示和管理个人资料。密码提交给 Supabase 身份验证服务，应用不保存明文密码。</td><td>账号和资料由 Supabase 云服务处理；登录令牌及部分资料保存在本机应用私有空间。头像由您主动选择后上传至云端存储。</td></tr>
+        <tr><td>菜品识别</td><td>您拍摄或主动选择的图片会发送至百度智能云菜品识别接口，以返回菜名等识别结果。</td><td>识别图片、结果、历史和收藏可保存在本机；所选图片会因识别请求传输至百度智能云。图库访问通过系统照片选择器发起。</td></tr>
+        <tr><td>运动与健康记录</td><td>经您授权读取 Health Connect 中的步数、距离、活动热量、运动、心率、血氧及睡眠记录；也可使用手机运动传感器记录步数，或使用摄像头进行心率估算。体重由您自行输入。</td><td>相关历史、体重和图表数据主要保存在本机，用于日、周、月回顾及目标展示。心率和血氧等健康信息属于敏感个人信息。</td></tr>
+        <tr><td>户外跑步和地图</td><td>经您同意并授予定位权限后，获取位置、运动轨迹、时间、距离等，用于显示地图、记录跑步路线及计算运动数据。</td><td>跑步路线与记录保存在本机。高德地图与定位 SDK 为提供服务会按下文所述自行采集必要信息。</td></tr>
+        <tr><td>心理测评、心情记录和减脂计划</td><td>您主动填写的测评答案与结果、心情记录、性别、年龄、身高、体重、围度、运动和饮食偏好，用于生成相应报告、回顾或计划。</td><td>这些记录保存在本机。测评和计划仅供健康管理参考，不能替代医疗诊断或治疗。</td></tr>
+        <tr><td>AI 助手与 AI 回顾</td><td>您主动发送的问题会提交至 AI 服务；为保持对话连贯，最多附带最近 6 条对话消息。饮食页当天识别出的菜名会随普通 AI 提问附带，但不代表您已食用。选择共享健康数据时，才会附带本机健康摘要；进入睡眠专题提问时，会附带最近的本机睡眠记录。您主动生成每周 AI 回顾时，会提交该回顾所需的近期摘要。</td><td>请求先经过 Supabase Edge Function，再转发至阿里云百炼模型服务。App 在本机按账号最多保存最近 40 组已完成问答；我们的 Edge Function 代码未主动将问答写入应用数据库。服务提供方可能依其规则处理请求数据。</td></tr>
+        <tr><td>意见反馈</td><td>您输入的反馈文字只在您点击分享后，交由您选择的其他应用发送。</td><td>悦衡不会自动附加您的账号资料。</td></tr>
+      </tbody>
+    </table></div>
+    <p class="notice"><strong>特别提醒：</strong>定位、健康指标、心理测评和您在 AI 对话中主动输入的健康情况可能涉及敏感个人信息。请仅在理解对应功能用途后授权或提交；您可以不使用相关功能。</p>
+  </section>
+
+  <section id="permissions">
+    <h2>二、系统权限</h2>
+    <ul>
+      <li><strong>相机：</strong>拍摄菜品图片及在您主动使用时进行手机心率估算。拒绝后可继续使用不依赖相机的功能。</li>
+      <li><strong>精确/粗略位置：</strong>户外跑步时定位、绘制路线和展示地图；开始跑步后可能在前台服务中持续定位，结束后停止。拒绝后无法记录需要位置的户外跑步。</li>
+      <li><strong>身体活动与 Health Connect 读取权限：</strong>记录手机步数，或读取您逐项授权的健康数据；您可在系统或 Health Connect 设置中撤销。</li>
+      <li><strong>网络及网络状态：</strong>完成账号、AI、菜品识别与地图服务请求。</li>
+      <li><strong>通知、前台服务、唤醒锁和振动：</strong>支持跑步、计步、助眠音频等正在进行的功能及必要提示。</li>
+      <li><strong>旧版 Android 存储权限：</strong>兼容旧系统中的图片读取或保存。较新系统优先使用系统照片选择器。</li>
+    </ul>
+    <p>权限可在手机系统设置中关闭；已授权权限的关闭不影响关闭前依法完成的处理。</p>
+  </section>
+
+  <section id="third-parties">
+    <h2>三、第三方服务与信息共享</h2>
+    <p>为实现您主动使用的功能，悦衡使用以下第三方服务。各服务可能按其政策处理技术日志和必要设备信息；具体范围会随设备、系统版本、SDK 配置及使用场景变化。</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>服务与提供方</th><th>使用场景及可能涉及的信息</th><th>规则链接</th></tr></thead>
+      <tbody>
+        <tr><td>高德开放平台地图 SDK、定位 SDK<br>北京高德图强科技有限公司</td><td>户外跑步时展示地图、获取当前位置和绘制路线。SDK 可能处理经纬度、GNSS 信息、IP 地址、网络类型及 Wi-Fi/基站信息、传感器信息、设备信号强度、OAID、应用名和版本、设备型号、操作系统、运营商与屏幕分辨率等。由 SDK 在终端采集，具体以实际权限和高德政策为准。</td><td><a href="https://lbs.amap.com/pages/privacy/" target="_blank" rel="noopener noreferrer">高德地图开放平台隐私权政策</a></td></tr>
+        <tr><td>百度智能云菜品识别接口<br>百度智能云</td><td>仅在您主动发起菜品识别时，接收所选图片以返回识别结果。</td><td><a href="https://aca.bce.baidu.com/doc/Agreements/index.html" target="_blank" rel="noopener noreferrer">百度智能云协议与隐私政策</a></td></tr>
+        <tr><td>Supabase 身份验证、数据库、存储及 Edge Function<br>Supabase</td><td>处理账号邮箱、身份验证、个人资料、头像和 AI 请求转发；登录时会使用认证令牌。</td><td><a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">Supabase Privacy Policy</a></td></tr>
+        <tr><td>阿里云百炼模型服务<br>阿里云</td><td>仅在您主动使用 AI 助手、营养分析或每周 AI 回顾时，处理提交的问题和上述必要上下文并生成回复。</td><td><a href="https://help.aliyun.com/zh/model-studio/privacy-notice" target="_blank" rel="noopener noreferrer">百炼合规资质与隐私说明</a></td></tr>
+      </tbody>
+    </table></div>
+    <p>除实现服务所需的上述处理及法律要求的情形外，我们不会出售您的个人信息，也不会主动公开您的私人记录。</p>
+  </section>
+
+  <section id="storage">
+    <h2>四、保存地点、期限与安全</h2>
+    <p>本机记录保存在应用私有存储中，通常在您删除相应记录、清除应用数据或卸载应用时删除。AI 问答历史仅保留最近 40 组已完成问答；超过上限时由较早记录依次替换。部分本机信息可能受 Android 系统备份设置影响；应用备份规则排除了部分健康记录数据库和 AI 问答历史，其余本机数据是否进入系统备份取决于实际备份配置。</p>
+    <p>当前 Android 版连接的 Supabase 云项目使用 <strong>ap-northeast-1 区域，即日本东京</strong>（参见 <a href="https://supabase.com/docs/guides/platform/regions" target="_blank" rel="noopener noreferrer">Supabase 官方区域列表</a>）。账号和资料功能使用该境外云项目，因此邮箱、账号资料及您主动上传的头像会因使用相关功能传输至境外。AI 请求经 Supabase Edge Function 处理后转发至阿里云百炼；AI 请求处理节点及服务提供方可能另有数据处理地点，具体以其适用规则为准。</p>
+    <p>云端账号资料原则上保存至账号注销或您要求删除；第三方服务产生的必要日志、备份及保留期限以其适用政策和法律要求为准。我们采用传输加密、账号认证和应用私有存储等措施保护信息，但任何网络传输和存储方式都无法保证绝对安全。</p>
+  </section>
+
+  <section id="rights">
+    <h2>五、您的权利</h2>
+    <p>您可以在 App 内查看和修改部分个人资料，删除可管理的本地记录，并通过系统设置撤销相机、定位、身体活动和 Health Connect 授权。退出登录只清除本机登录会话，<strong>不会自动删除云端账号</strong>。</p>
+    <p>如需访问、更正、删除其他信息，注销云端账号，获取个人信息副本，或对本政策提出疑问，请发送邮件至 <a href="mailto:3365217913@qq.com">3365217913@qq.com</a>，说明您的请求和用于核实身份的必要信息。我们将在法律规定的期限内处理并答复；法律要求保留的信息可能无法立即删除。</p>
+  </section>
+
+  <section id="children">
+    <h2>六、未成年人</h2>
+    <p>悦衡的减脂计划面向成年人，应用整体不面向不满 14 周岁的儿童主动提供服务。如我们发现未经监护人同意处理了不满 14 周岁儿童的个人信息，会采取相应删除或停止处理措施。未成年人使用其他功能应在监护人指导下阅读本政策。</p>
+  </section>
+
+  <section id="updates">
+    <h2>七、政策更新与联系</h2>
+    <p>功能、第三方服务或个人信息处理规则发生实质变化时，我们会更新本政策并在 App 内以适当方式提醒您。更新后的政策会标明生效日期；涉及依法需要另行同意的处理时，我们会按要求征得同意。</p>
+    <p>运营者：刘思阳<br>所在单位：沈阳城市学院<br>联系邮箱：<a href="mailto:3365217913@qq.com">3365217913@qq.com</a></p>
+  </section>
+  <footer>© 2026 悦衡 · 本政策适用于 Android 版悦衡</footer>
+</main>
+</body>
+</html>
+
